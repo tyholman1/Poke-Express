@@ -1,12 +1,13 @@
 const React = require("react")
-
-class Index extends React.Component {
-
-    render(){
-        const myStyle = {
+ const myStyle = {
             color: '#ffffff',
             backgroundColor: '#000000',
             }
+            
+class Index extends React.Component {
+
+    render(){
+       
 
         const {pokemon} = this.props
         return(
