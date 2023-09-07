@@ -9,7 +9,12 @@ app.set("views", "./views")
 app.engine('jsx', jsxViewEngine())
 
 
+app.get('/', (req, res) =>{
+    res.send("Welcome to the Pokemon App!")
+})
+
 app.get('/pokemon', (request, response) =>{
+    //.render to display the Index.jsx file
     response.render('Index', {pokemon})
 })
 
