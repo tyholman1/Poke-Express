@@ -15,10 +15,12 @@ app.get('/', (req, res) =>{
 
 app.get('/pokemon', (request, response) =>{
     //.render to display the Index.jsx file
+ 
     response.render('Index', {pokemon})
 })
 
 
+
 app.listen(PORT, ()=>{
-    console.log("Pokemon!")
+    console.log("Gotta Catch 'Em All!")
 })
