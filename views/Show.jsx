@@ -6,11 +6,10 @@ class Show extends React.Component {
 
     return (
       <div>
-        <h1> Show Page </h1>
-        <div>
-        {name}
-        </div> 
+        <h1> Gotta Catch 'Em All </h1>
+        <h2>{name}</h2> 
         <img src={img} alt="" />
+        <a href='/pokemon' type='text'>Back</a>     
       </div>
     );
   }
