@@ -1,4 +1,5 @@
 const React = require("react")
+const pokemon = require("../models/pokemon")
  const myStyle = {
             color: '#ffffff',
             backgroundColor: '#000000',
@@ -7,9 +8,8 @@ const React = require("react")
 class Index extends React.Component {
 
     render(){
-       
-
         const {pokemon} = this.props
+        
         return(
             <div>
                 <h1 style={myStyle}>
@@ -19,8 +19,8 @@ class Index extends React.Component {
                     {pokemon.map((pokemons, i) =>{
                         return(
                           <li key={i}>
-                           <a href={`/pokemon/${i}`}><br/>
-                            {pokemons.name.toUpperCase()}
+                           <a href={`/pokemon/${i}`}>
+                            {pokemons.name.charAt(0).toUpperCase() + pokemons.name.slice(1)}
                             </a>
                         </li>  
                         )
